@@ -18,22 +18,24 @@ ffmpeg -version
 اجرای پروژه
 
 ساختار پروژه:
-
+```
 project/
 ├── video_maker.py
 └── maker/
     └── input.mp4
+```
 
 سپس:
-
+```
 python video_maker.py
+```
 
 اگر پوشه "output" از قبل وجود داشته باشد، برنامه برای حذف خروجی قبلی تأیید می‌گیرد.
 
 خروجی‌های احتمالی
 
 در صورت موفقیت:
-
+```
 output/
 ├── output.m3u8
 ├── enc.key
@@ -41,11 +43,13 @@ output/
 ├── segment_001.ts
 ├── segment_002.ts
 └── ...
+```
 
+```
 - "output.m3u8": Playlist اصلی HLS
 - "enc.key": کلید AES-128
 - "segment_*.ts": Segmentهای رمزنگاری‌شده ویدئو
-
+```
 فایل "key_info.txt" فقط موقت است و پس از تبدیل حذف می‌شود. این فایل نباید روی هاست آپلود شود.
 
 خطاهای احتمالی
