@@ -6,14 +6,17 @@ Video Maker
 
 پیش‌نیازها
 
+```
 - Python
 - FFmpeg
+```
 - قرار داشتن FFmpeg در Windows PATH
 
 بررسی نصب:
-
+```
 python --version
 ffmpeg -version
+```
 
 اجرای پروژه
 
@@ -53,8 +56,9 @@ output/
 فایل "key_info.txt" فقط موقت است و پس از تبدیل حذف می‌شود. این فایل نباید روی هاست آپلود شود.
 
 خطاهای احتمالی
-
+```
 - "No input file was found": فایل "input" داخل "maker" وجود ندارد.
 - "Multiple files with the name 'input'": بیش از یک فایل با نام "input" وجود دارد.
 - "FFmpeg was not found": FFmpeg نصب نیست یا در PATH قرار نگرفته است.
 - "FFmpeg failed during video conversion": عملیات تبدیل توسط FFmpeg با خطا متوقف شده است.
+```
